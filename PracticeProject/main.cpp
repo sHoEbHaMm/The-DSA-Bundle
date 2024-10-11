@@ -2,7 +2,9 @@
 
 //#include "Array.h"
 //#include "Stack.h"
-#include "SimpleQueue.h"
+//#include "SimpleQueue.h"
+
+#include "SinglyList.h"
 
 int main()
 {
@@ -22,24 +24,48 @@ int main()
 
     //newStack.Display();
 
-    SimpleQueue queue(5);
+    //SimpleQueue queue(5);
 
-    queue.dequeue();
-    queue.Display();
+    //queue.dequeue();
+    //queue.Display();
 
-    queue.enqueue(1);
-    queue.enqueue(2);
-    queue.enqueue(3);
-    queue.enqueue(4);
-    queue.enqueue(5);
+    //queue.enqueue(1);
+    //queue.enqueue(2);
+    //queue.enqueue(3);
+    //queue.enqueue(4);
+    //queue.enqueue(5);
 
-    queue.Display();
+    //queue.Display();
 
-    queue.enqueue(6);
+    //queue.enqueue(6);
 
-    queue.dequeue();
+    //queue.dequeue();
 
-    queue.Display();
+    //queue.Display();
+
+    SinglyList newList;
+
+    newList.Display(); //empty
+
+    newList.Insert(1);
+    newList.Insert(2);
+    newList.Insert(3);
+    newList.Insert(4);
+
+    newList.Display();
+
+    newList.Remove(5);
+    newList.Remove(3);
+
+    newList.InsertAtBeginning(0);
+
+    newList.InsertAt(3, 3);
+
+    newList.RemoveAt(2);
+
+    newList.Display();
+
+    _CrtDumpMemoryLeaks();
 
     return 0;
 }

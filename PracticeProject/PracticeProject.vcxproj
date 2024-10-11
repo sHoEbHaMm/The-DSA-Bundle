@@ -130,6 +130,7 @@
     <ClCompile Include="Array.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SimpleQueue.cpp" />
+    <ClCompile Include="SinglyList.cpp" />
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +138,7 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="DoubleEndedQueue.h" />
     <ClInclude Include="SimpleQueue.h" />
+    <ClInclude Include="SinglyList.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
