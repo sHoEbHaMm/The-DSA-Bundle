@@ -3,8 +3,8 @@
 //#include "Array.h"
 //#include "Stack.h"
 //#include "SimpleQueue.h"
-
-#include "SinglyList.h"
+//#include "SinglyList.h"
+#include "DoublyList.h"
 
 int main()
 {
@@ -43,29 +43,48 @@ int main()
 
     //queue.Display();
 
-    SinglyList newList;
+    //SinglyList newList;
 
-    newList.Display(); //empty
+    //newList.Display(); //empty
 
-    newList.Insert(1);
-    newList.Insert(2);
-    newList.Insert(3);
-    newList.Insert(4);
+    //newList.Insert(1);
+    //newList.Insert(2);
+    //newList.Insert(3);
+    //newList.Insert(4);
 
-    newList.Display();
+    //newList.Display();
 
-    newList.Remove(5);
-    newList.Remove(3);
+    //newList.Remove(5);
+    //newList.Remove(3);
 
-    newList.InsertAtBeginning(0);
+    //newList.InsertAtBeginning(0);
 
-    newList.InsertAt(3, 3);
+    //newList.InsertAt(3, 3);
 
-    newList.RemoveAt(2);
+    //newList.RemoveAt(2);
 
-    newList.Display();
+    //newList.Display();
 
-    _CrtDumpMemoryLeaks();
+    DoublyList doublyList;
+
+    doublyList.InsertAtEnd(1);
+    doublyList.InsertAtEnd(2);
+    doublyList.InsertAtEnd(3);
+    doublyList.InsertAtEnd(4);
+
+    doublyList.DisplayFromFront();
+
+    doublyList.RemoveFromBeginning();
+
+    doublyList.DisplayFromFront();
+
+    doublyList.RemoveFromEnd();
+
+    doublyList.DisplayFromFront();
+
+    doublyList.RemoveAt(2);
+
+    doublyList.DisplayFromEnd();
 
     return 0;
 }
