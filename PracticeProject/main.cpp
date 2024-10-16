@@ -4,7 +4,9 @@
 //#include "Stack.h"
 //#include "SimpleQueue.h"
 //#include "SinglyList.h"
-#include "DoublyList.h"
+//#include "DoublyList.h"
+//#include "LinkedQueue.h"
+#include "BinaryTree.h"
 
 int main()
 {
@@ -65,26 +67,48 @@ int main()
 
     //newList.Display();
 
-    DoublyList doublyList;
+    //DoublyList doublyList;
 
-    doublyList.InsertAtEnd(1);
-    doublyList.InsertAtEnd(2);
-    doublyList.InsertAtEnd(3);
-    doublyList.InsertAtEnd(4);
+    //doublyList.InsertAtEnd(1);
+    //doublyList.InsertAtEnd(2);
+    //doublyList.InsertAtEnd(3);
+    //doublyList.InsertAtEnd(4);
 
-    doublyList.DisplayFromFront();
+    //doublyList.DisplayFromFront();
 
-    doublyList.RemoveFromBeginning();
+    //doublyList.RemoveFromBeginning();
 
-    doublyList.DisplayFromFront();
+    //doublyList.DisplayFromFront();
 
-    doublyList.RemoveFromEnd();
+    //doublyList.RemoveFromEnd();
 
-    doublyList.DisplayFromFront();
+    //doublyList.DisplayFromFront();
 
-    doublyList.RemoveAt(2);
+    //doublyList.RemoveAt(2);
 
-    doublyList.DisplayFromEnd();
+    //doublyList.DisplayFromEnd();
+
+    //LinkedQueue q;
+
+    //q.Display();
+
+    //q.Enqueue(1);
+    //q.Enqueue(2);
+    //q.Enqueue(3);
+    //q.Enqueue(4);
+
+    //q.Display();
+
+    //q.Dequeue();
+
+    //q.Display();
+
+
+    BinaryTree bTree;
+
+    bTree.CreateBinaryTree();
+
+    bTree.PreOrderTraversal(bTree.GetRoot());
 
     return 0;
 }

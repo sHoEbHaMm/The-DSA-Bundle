@@ -128,7 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Array.cpp" />
+    <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="DoublyList.cpp" />
+    <ClCompile Include="LinkedQueue.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SimpleQueue.cpp" />
     <ClCompile Include="SinglyList.cpp" />
@@ -136,9 +138,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="DoubleEndedQueue.h" />
     <ClInclude Include="DoublyList.h" />
+    <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="SimpleQueue.h" />
     <ClInclude Include="SinglyList.h" />
     <ClInclude Include="Stack.h" />
